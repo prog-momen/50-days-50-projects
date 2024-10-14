@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Input Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    /* Style for form controls */
+    label {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+    input:focus, select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    /* Submit and reset buttons */
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #218838;
+    }
+    input[type="reset"] {
+      background-color: #dc3545;
+    }
+    input[type="reset"]:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Input Types</h1>
+
+  <div class="form-container">
+    <!-- Text input -->
+    <label for="text">Text Input</label>
+    <input type="text" id="text" placeholder="Enter text">
+
+    <!-- Password input -->
+    <label for="password">Password Input</label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <!-- Email input -->
+    <label for="email">Email Input</label>
+    <input type="email" id="email" placeholder="Enter email">
+
+    <!-- Number input -->
+    <label for="number">Number Input</label>
+    <input type="number" id="number" placeholder="Enter a number">
+
+    <!-- Date input -->
+    <label for="date">Date Input</label>
+    <input type="date" id="date">
+
+    <!-- Color input -->
+    <label for="color">Color Input</label>
+    <input type="color" id="color">
+
+    <!-- Range input -->
+    <label for="range">Range Input</label>
+    <input type="range" id="range" min="0" max="100">
+
+    <!-- File input -->
+    <label for="file">File Input</label>
+    <input type="file" id="file">
+  
+    <!-- Radio And Checkbox-->
+   <label for="Radio Checkbox">Radio</label>
+   <input type="radio" >
+   <input type="radio">
+
+   <!-- Checkbox-->
+   <label for="Checkbox">Checkbox</label>
+   <input type="checkbox">
+   <input type="checkbox">
+  
+  
+   <!-- Submit and Reset buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </div>
+
+</body>
+</html>
